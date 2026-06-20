@@ -45,5 +45,4 @@ jobs:
       run: pytest -o pythonpath=src --cov=src --cov-fail-under=85
         
     - name: Generate Documentation (pdoc)
-      run: |
-        pdoc --html --output-dir docs src/json2csv
+      run: pdoc -o docs src/json2csv
