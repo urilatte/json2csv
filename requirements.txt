@@ -6,7 +6,7 @@ build==1.4.0
 chardet==7.4.3
 click==8.3.1
 colorama==0.4.6
-coverage<6.0,>=4.4
+coverage
 dill==0.4.1
 hypothesis==6.155.2
 iniconfig==2.3.0
@@ -23,8 +23,8 @@ mccabe==0.7.0
 mdit-py-plugins==0.6.1
 mdurl==0.1.2
 multimetric==2.4.4
-mutatest==3.1.0
-mutmut==3.6.0
+mutatest
+mutmut
 MutPy==0.6.1
 mypy==1.19.1
 mypy_extensions==1.1.0
