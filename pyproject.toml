@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.ruff]
+# Ajustes generales de ruff
+
+[tool.ruff.lint]
+# Selecciona reglas de PEP8 (E, W, F), e incluye PEP257 para docstrings (D) e Imports (I)
+select = ["E", "F", "W", "D", "I"]
+ignore = []
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257" # Requisito Punto K
+
+[tool.mypy]
+python_version = "3.11"
+strict = true # Requisito Punto L
+
+[tool.pytest.ini_options]
+addopts = "--cov=src --cov-report=term-missing"
