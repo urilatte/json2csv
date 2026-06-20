@@ -42,9 +42,9 @@ jobs:
       run: bandit -r src/ -ll
 
     - name: Run Tests with Pytest & Coverage (Min 85%)
-      run: |
-        pytest --cov=src --cov-fail-under=85
-
+        env:
+          PYTHONPATH: src
+        run: pytest --cov=src --cov-fail-under=85
     - name: Generate Documentation (pdoc)
       run: |
         pdoc --html --output-dir docs src/json2csv
